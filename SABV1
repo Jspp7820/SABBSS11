@@ -1,3 +1,4 @@
+
 local G2L = {};
 
 -- StarterGui.Panel
@@ -24,7 +25,7 @@ G2L["3"]["Thickness"] = 2;
 G2L["3"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.Panel.Main.TextLabel
+-- StarterGui.Panel.Main.TITLE
 G2L["4"] = Instance.new("TextLabel", G2L["2"]);
 G2L["4"]["TextWrapped"] = true;
 G2L["4"]["BorderSizePixel"] = 0;
@@ -37,6 +38,7 @@ G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Text"] = [[CHEAT PANEL]];
+G2L["4"]["Name"] = [[TITLE]];
 
 
 -- StarterGui.Panel.Main.In
@@ -231,6 +233,7 @@ G2L["16"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 -- StarterGui.Panel.Main.In.Controls.In.NumInput.Input
 G2L["17"] = Instance.new("TextBox", G2L["13"]);
+G2L["17"]["CursorPosition"] = -1;
 G2L["17"]["Name"] = [[Input]];
 G2L["17"]["PlaceholderColor3"] = Color3.fromRGB(139, 139, 139);
 G2L["17"]["BorderSizePixel"] = 0;
@@ -287,13 +290,112 @@ G2L["1b"]["Name"] = [[sw]];
 G2L["1b"]["BackgroundTransparency"] = 0.7;
 
 
+-- StarterGui.Panel.Main.In.Controls.In.StringInput
+G2L["1c"] = Instance.new("Frame", G2L["8"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 86, 255);
+G2L["1c"]["Size"] = UDim2.new(0.9523, 0, 0.01696, 0);
+G2L["1c"]["Position"] = UDim2.new(0.0144, 0, 0, 0);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Name"] = [[StringInput]];
+G2L["1c"]["LayoutOrder"] = -1;
+G2L["1c"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.UIStroke
+G2L["1d"] = Instance.new("UIStroke", G2L["1c"]);
+
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Title
+G2L["1e"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0.68486, 0, 1, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Mod Title (25chars. max)]];
+G2L["1e"]["Name"] = [[Title]];
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.UIListLayout
+G2L["1f"] = Instance.new("UIListLayout", G2L["1c"]);
+G2L["1f"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
+G2L["1f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1f"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Input
+G2L["20"] = Instance.new("TextBox", G2L["1c"]);
+G2L["20"]["CursorPosition"] = -1;
+G2L["20"]["Name"] = [[Input]];
+G2L["20"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(140, 140, 140);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["PlaceholderText"] = [[...]];
+G2L["20"]["Size"] = UDim2.new(0.31514, 0, 1, 0);
+G2L["20"]["Position"] = UDim2.new(0.68486, 0, 0, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[]];
+G2L["20"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Input.D
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["21"]["Name"] = [[D]];
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Input.N
+G2L["22"] = Instance.new("Sound", G2L["20"]);
+G2L["22"]["PlaybackSpeed"] = 2;
+G2L["22"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["22"]["Name"] = [[N]];
+-- [ERROR] cannot convert AudioContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["22"]["SoundId"] = [[rbxassetid://131661013076677]];
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Input.Y
+G2L["23"] = Instance.new("Sound", G2L["20"]);
+G2L["23"]["PlaybackSpeed"] = 2;
+G2L["23"]["Volume"] = 1;
+G2L["23"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["23"]["Name"] = [[Y]];
+-- [ERROR] cannot convert AudioContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["23"]["SoundId"] = [[rbxassetid://99402307451136]];
+
+
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.sw
+G2L["24"] = Instance.new("Frame", G2L["1c"]);
+G2L["24"]["Active"] = true;
+G2L["24"]["ZIndex"] = -3;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["AutoLocalize"] = false;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["24"]["Size"] = UDim2.new(-1, 0, 0.101, 0);
+G2L["24"]["Position"] = UDim2.new(1, 0, 0.8991, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[sw]];
+G2L["24"]["BackgroundTransparency"] = 0.7;
+
+
 -- StarterGui.Panel.Main.UIAspectRatioConstraint
-G2L["1c"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
-G2L["1c"]["AspectRatio"] = 7.5;
+G2L["25"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
+G2L["25"]["AspectRatio"] = 7.5;
 
 
 -- StarterGui.Panel.Main.UIDragDetector
-G2L["1d"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["26"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
 
@@ -328,6 +430,7 @@ local script = G2L["e"];
 		if tonumber(script.Parent.Text) == nil then
 			PopColor(Color3.new(0.666667, 0, 0))
 			script.Parent.N.Playing = true
+			script.Parent.Text = ""
 		else
 			PopColor(Color3.new(0.333333, 0.666667, 0))
 			script.Parent.Y.Playing = true
@@ -378,6 +481,7 @@ local script = G2L["18"];
 		if tonumber(script.Parent.Text) == nil then
 			PopColor(Color3.new(0.666667, 0, 0))
 			script.Parent.N.Playing = true
+			script.Parent.Text = ""
 		else
 			PopColor(Color3.new(0.333333, 0.666667, 0))
 			script.Parent.Y.Playing = true
@@ -397,5 +501,48 @@ local script = G2L["18"];
 	end)
 end;
 task.spawn(C_18);
+-- StarterGui.Panel.Main.In.Controls.In.StringInput.Input.D
+local function C_21()
+local script = G2L["21"];
+	local Originalc3 = script.Parent.BackgroundColor3
+	local OriginalTxt = script.Parent.Parent.Title.Text
+	local PC = false
+	
+	local ColorDelay = 1
+	
+	local function WaitTxt()
+		for i = ColorDelay, 0, -1 do
+			script.Parent.Parent.Title.Text = "Wait "..i.."s..."
+			wait(1)
+		end
+		script.Parent.Parent.Title.Text = OriginalTxt
+	end
+	
+	local function PopColor(c3)
+		if PC == false then
+			PC = true
+			script.Parent.BackgroundColor3 = c3
+			WaitTxt()
+			script.Parent.BackgroundColor3 = Originalc3
+			PC = false
+		end
+	end
+	
+	script.Parent.FocusLost:Connect(function()
+		if string.len(script.Parent.Text) > 25 then
+			PopColor(Color3.new(0.666667, 0, 0))
+			script.Parent.N.Playing = true
+			script.Parent.Text = ""
+		else
+			PopColor(Color3.new(0.333333, 0.666667, 0))
+			script.Parent.Y.Playing = true
+			
+			-- [... FUNCTION HERE ...] --
+			script.Parent.Parent.Parent.Parent.Parent.Parent.TITLE.Text = script.Parent.Text
+			--
+		end
+	end)
+end;
+task.spawn(C_21);
 
 return G2L["1"], require;
