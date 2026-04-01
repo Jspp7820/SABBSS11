@@ -563,7 +563,7 @@ function module.updatePlot()
 			local TextL = plot.PlotSign.SurfaceGui.Frame.TextLabel
 			if TextL.Text == user.."'s Base" then
 				base = plot
-				collect = plot.Cash["structure base home"]			
+				collect = plot.DeliveryHitbox		
 				ObjB.Value = plot
 				ObjC.Value = collect
 
