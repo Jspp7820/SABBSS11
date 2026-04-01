@@ -1,7 +1,9 @@
+-- Instances: 51 | Scripts: 4 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.SabUI
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Enabled"] = false;
 G2L["1"]["Name"] = [[SabUI]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -566,6 +568,10 @@ function module.updatePlot()
 				collect = plot.DeliveryHitbox		
 				ObjB.Value = plot
 				ObjC.Value = collect
+				
+				collect.Touched:Connect(function()
+					print("PLOT TOUCHED")
+				end)
 
 				return true
 			end
@@ -587,7 +593,6 @@ function module.TP()
 end
 
 return module
-
 end;
 };
 -- StarterGui.SabUI.Main.In.Controls.In.NumInput.Input.D
