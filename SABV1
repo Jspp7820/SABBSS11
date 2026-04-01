@@ -561,7 +561,7 @@ function module.updatePlot()
 	for _, plot in Plots:GetChildren() do
 		if plot:IsA("Model") then
 			local TextL = plot.PlotSign.SurfaceGui.Frame.TextLabel
-			if TextL.Text == user.."'s" then
+			if TextL.Text == user.."'s Base" then
 				base = plot
 				collect = plot.Cash["structure base home"]			
 				ObjB.Value = plot
