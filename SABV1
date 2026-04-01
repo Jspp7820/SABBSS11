@@ -570,9 +570,8 @@ function module.updatePlot()
 				return true
 			end
 		end
-
-		return false
 	end
+	return false
 end
 
 function module.TP()
