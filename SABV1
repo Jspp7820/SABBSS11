@@ -495,25 +495,6 @@ G2L["2e"]["AspectRatio"] = 7.5;
 G2L["2f"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
-
--- StarterGui.SabUI.Main.Version
-G2L["30"] = Instance.new("TextLabel", G2L["2"]);
-G2L["30"]["TextWrapped"] = true;
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["TextSize"] = 14;
-G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["30"]["TextScaled"] = true;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["BackgroundTransparency"] = 1;
-G2L["30"]["Size"] = UDim2.new(0.36308, 0, 0.31758, 0);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[v0.0.1]];
-G2L["30"]["Name"] = [[Version]];
-G2L["30"]["Position"] = UDim2.new(-0.00276, 0, 9.92604, 0);
-
-
 -- StarterGui.SabUI.CollectSys
 G2L["31"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["31"]["Name"] = [[CollectSys]];
